@@ -4,6 +4,8 @@ import CTA from './components/CTA'
 import ProductDetail from './components/ProductDetail'
 import SellerDashboard from './components/SellerDashboard'
 import Downloads from './components/Downloads'
+import SellerAnalytics from './components/SellerAnalytics'
+import SellerProducts from './components/SellerProducts'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Catalog />
       <CTA />
       <SellerDashboard />
+      <SellerProducts />
+      <SellerAnalytics />
       <Downloads />
     </>
   )
@@ -39,6 +43,8 @@ function App() {
           <nav className="flex items-center gap-4 text-sm">
             <a href="#catalog" className="text-slate-600 hover:text-slate-900">Katalog</a>
             <a href="#seller" className="text-slate-600 hover:text-slate-900">Verkäufer</a>
+            <a href="#seller-products" className="text-slate-600 hover:text-slate-900">Meine Produkte</a>
+            <a href="#analytics" className="text-slate-600 hover:text-slate-900">Analytics</a>
             <a href="#/downloads" className="text-slate-600 hover:text-slate-900">Meine Downloads</a>
             <a href="/test" className="px-3 py-1.5 rounded-lg bg-slate-900 text-white">Backend Test</a>
           </nav>
